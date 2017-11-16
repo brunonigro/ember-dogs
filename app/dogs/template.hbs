@@ -1,0 +1,9 @@
+<h2>Doglist</h2>
+
+<ul>
+    {{#each model as |dogs|}}
+        <li>{{dogs.race}} - {{dogs.color}}</li>
+    {{/each}}
+</ul>
+
+{{outlet}}
