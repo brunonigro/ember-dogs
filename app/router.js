@@ -8,6 +8,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('dogs', {path:'/'});
+
+  this.route('store', function() {
+    this.route('book');
+  });
 });
 
 export default Router;
